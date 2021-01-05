@@ -1,0 +1,72 @@
+.ddsmoothmenu{
+}
+
+.ddsmoothmenu ul{margin: 0; padding: 22px 35px; list-style-type: none;}
+
+/*上层列表*/
+.ddsmoothmenu ul li{position: relative; display: inline; float: left;
+}
+
+/*上层列表链接样式*/
+.ddsmoothmenu ul li a {
+	display: block;
+	height: 35px;
+	padding: 0 20px;
+	line-height: 35px;
+	font-size: 14px;
+	margin-right: 5px;
+	color: #fff;	
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+}
+
+* html .ddsmoothmenu ul li a{ /*IE6 hack使适应sub menu*/
+display: inline-block;
+}
+ .ddsmoothmenu ul li a:hover { 
+	background: url(../images/templatemo_menu_item_hover.png);
+}
+
+.ddsmoothmenu ul li ul {
+	position: absolute;
+	width: 160px;
+	margin: 0;
+	padding: 10px 0;
+	display: none; 
+	visibility: hidden;
+	background: #000;
+	border-left: 0;
+	border-right: 0;
+	color: #ccc;
+}
+
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+background: none;
+}
+
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+.ddsmoothmenu ul li ul li a{
+	font-weight: 500;
+	width: 120px; 
+	margin: 0;
+	padding: 7px 20px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	text-align: left;
+	background: none;
+	color: #666;
+}
+
+.ddsmoothmenu ul li ul li a.selected, .ddsmoothmenu ul li ul li a:hover {
+	color: #fff;
+}
+
+* html .ddsmoothmenu{height: 1%;} 
